@@ -36,7 +36,7 @@ var intents = new builder.IntentDialog({ recognizers: [recognizer] })
     session.send('Hi! This is the None intent handler. You said: \'%s\'.', session.message.text);
 })
 .onDefault((session) => {
-    session.send('Sorry, I did not understand \'%s\'.', session.message.text);
+    session.send('理解できませんでした。 \'%s\'.', session.message.text);
 });
 
 bot.dialog('/', intents);    
