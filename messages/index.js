@@ -35,7 +35,7 @@ var intents = new builder.IntentDialog({ recognizers: [recognizer] })
 .matches('None', (session, args) => {
     session.send('intext該当する情報がありません. You said: \'%s\'.', session.message.text);
 })
-.matches('Create conference record', (session, args) => {
+.matches('momochi', (session, args) => {
     session.send('ももち 呼んだ！！. You said: \'%s\'.', session.message.text);
 })
 .onDefault((session) => {
